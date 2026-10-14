@@ -350,10 +350,18 @@ def run(p: Params, start=None, end=None):
     pending_entry = None
     pending_exit = None
 
-    def cancel(reason):
+    def note(s_, result, T):
+        """One final log row per setup, with how far price got before the setup ended."""
+        log.append(dict(choch=fmt(s_["choch_time"]), dir="BUY" if s_["ev"].bull else "SELL", result=result,
+                         end=fmt(T), fvg=[round(x, 2) for x in s_["fvg"]], ob=[round(x, 2) for x in s_["ob"]],
+                         zone_at_end=s_["zone"], pen_fvg=round(s_["pen"]["FVG"] * 100),
+                         pen_ob=round(s_["pen"]["OB"] * 100), fvg_fail=s_["fvg_fail"], anchors=s_["anchors"],
+                         events=list(s_["events"])))
+
+    def cancel(reason, T):
         nonlocal setup
         if setup is not None:
-            log.append(dict(choch=fmt(setup["choch_time"]), dir="BUY" if setup["ev"].bull else "SELL", result=reason))
+            note(setup, reason, T)
         setup = None
 
     for j in range(i0, ltf.n):
@@ -374,18 +382,17 @@ def run(p: Params, start=None, end=None):
             buy = s_["ev"].bull
             R = (E - sl) if buy else (sl - E)
             if R <= 0:
-                log.append(dict(choch=fmt(s_["choch_time"]), dir="BUY" if buy else "SELL", result="gap past SL"))
+                note(s_, "gap past SL", T_open)
             else:
                 tg = targets_at(targets, T_open, E, buy)
                 if not tg:
-                    log.append(dict(choch=fmt(s_["choch_time"]), dir="BUY" if buy else "SELL", result="no H1/H4 target"))
+                    note(s_, "no H1/H4 target", T_open)
                 else:
                     near = tg[0]
                     dist = (near.lo - E) if buy else (E - near.hi)
                     rr = (dist - p.cost) / (R + p.cost)
                     if rr < p.rr_min:
-                        log.append(dict(choch=fmt(s_["choch_time"]), dir="BUY" if buy else "SELL",
-                                        result=f"RR {rr:.2f} < {p.rr_min}"))
+                        note(s_, f"RR {rr:.2f} < {p.rr_min} (target {near.tf} {near.kind})", T_open)
                     else:
                         pos = dict(buy=buy, E=E, sl=sl, sl0=sl, R=R, t_in=T_open, targets=tg, armed=False,
                                    be=False, zone=zone_kind, rr_pot=rr, near=f"{near.tf} {near.kind}",
@@ -393,22 +400,23 @@ def run(p: Params, start=None, end=None):
                                    zoneLU=(round(s_["L"], 2), round(s_["U"], 2)), anchor=fmt(int(ltf.t[anchor_i])),
                                    fvg=tuple(round(x, 2) for x in s_["fvg"]), ob=tuple(round(x, 2) for x in s_["ob"]),
                                    d1=bias_at(sw_d1, d1_close, T_open), h4=bias_at(sw_h4, h4_close, T_open))
-                        log.append(dict(choch=fmt(s_["choch_time"]), dir="BUY" if buy else "SELL", result="FILLED"))
+                        note(s_, "FILLED", T_open)
 
         # activate the next setup whose wait period has started
         while st_ptr < len(setups) and setups[st_ptr]["active_from"] <= T_open:
             if setup is not None:
-                cancel("replaced by new CHoCH")
+                cancel("replaced by new CHoCH", T_open)
             s_ = setups[st_ptr]
             setup = dict(s_, zone="FVG", L=s_["fvg"][0], U=s_["fvg"][1], anchor=None, anchor_lo=None,
-                         anchor_hi=None, blocked_until=None, start_j=j)
+                         anchor_hi=None, blocked_until=None, start_j=j, pen={"FVG": 0.0, "OB": 0.0},
+                         fvg_fail=None, anchors=0, events=[])
             st_ptr += 1
 
         # opposite M15 CHoCH known at this time cancels the setup
         if setup is not None:
             for tc, bull in choch_times:
                 if setup["choch_time"] < tc <= T_open and bull != setup["ev"].bull:
-                    cancel("opposite M15 CHoCH")
+                    cancel("opposite M15 CHoCH", tc)
                     break
 
         b_o, b_h, b_l, b_c = ltf.o[j], ltf.h[j], ltf.l[j], ltf.c[j]
@@ -442,16 +450,18 @@ def run(p: Params, start=None, end=None):
         buy = setup["ev"].bull
         L, U = setup["L"], setup["U"]
         W = U - L
+        pen = ((U - b_l) / W if buy else (b_h - L) / W) if W > 0 else (1.0 if (b_l <= U if buy else b_h >= L) else 0.0)
+        setup["pen"][setup["zone"]] = max(setup["pen"][setup["zone"]], pen)
         # zone failure (close beyond the far side) has priority over entry
         if (b_c < L) if buy else (b_c > U):
             if setup["zone"] == "FVG":
                 ob_lo, ob_hi = setup["ob"]
-                setup.update(zone="OB", L=ob_lo, U=ob_hi, anchor=None)
+                setup.update(zone="OB", L=ob_lo, U=ob_hi, anchor=None, fvg_fail=fmt(T_open))
                 setup["start_j"] = j + 1
                 if (b_c < ob_lo) if buy else (b_c > ob_hi):
-                    cancel("OB broken")
+                    cancel("OB broken", T_open)
                 continue
-            cancel("OB broken")
+            cancel("OB broken", T_open)
             continue
         if j < setup["start_j"]:
             continue
@@ -462,6 +472,7 @@ def run(p: Params, start=None, end=None):
             touched = (b_l <= thr and b_h >= L) if buy else (b_h >= thr and b_l <= U)
             if touched:
                 setup.update(anchor=j, anchor_lo=b_l, anchor_hi=b_h)
+                setup["anchors"] += 1
             continue
         # confirmation: close beyond the anchor candle's extreme
         if (b_c > setup["anchor_hi"]) if buy else (b_c < setup["anchor_lo"]):
@@ -471,15 +482,17 @@ def run(p: Params, start=None, end=None):
             blk = news_block(T_close)
             if pos is not None or pending_entry is not None:
                 setup.update(anchor=None)
-                log.append(dict(choch=fmt(setup["choch_time"]), dir="BUY" if buy else "SELL", result="signal while in position"))
+                setup["events"].append(f"{fmt(T_close)} signal skipped: already in a trade")
                 continue
             if blk is not None:
                 setup.update(anchor=None, blocked_until=blk)
-                log.append(dict(choch=fmt(setup["choch_time"]), dir="BUY" if buy else "SELL", result="news window"))
+                setup["events"].append(f"{fmt(T_close)} signal skipped: news window")
                 continue
             pending_entry = (setup, sl, a, setup["zone"])
             setup = None   # one filled trade per CHoCH; a skipped entry also consumes it
 
+    if setup is not None:
+        note(setup, "still waiting at end of data", int(ltf.t[ltf.n - 1]))
     if pos is not None:
         _close_pos(pos, ltf.c[ltf.n - 1], int(ltf.t[ltf.n - 1]), "open at end", trades, p)
     return trades, log, funnel

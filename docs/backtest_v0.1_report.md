@@ -61,7 +61,7 @@ Chi phí giả định: 0,40 $/oz cho mỗi lệnh (spread + phí + trượt). V
 - 3 setup bị thay bởi CHoCH mới.
 
 ## 3. Nhận xét về bộ quy tắc
-1. **Tần suất rất thấp** (khoảng 2 lệnh/tháng). Cần ít nhất 30–50 lệnh mới đánh giá được, tức 1–2 năm dữ liệu M5, hoặc phải forward test.
+1. **Tần suất: proxy đếm thiếu khoảng 3 lần.** Cùng tháng 14/09 → 14/10 có 16 setup; chạy đúng quy tắc (M5) khớp 6 lệnh, proxy (M15) chỉ khớp 2. Lý do: nến mốc và nến xác nhận trên M15 khó đạt hơn nhiều so với M5. Tần suất thật ước khoảng **5–6 lệnh/tháng**, không phải 2. Vẫn cần 30–50 lệnh mới đánh giá được. Chi tiết từng setup: `docs/backtest_v0.1_setups.md`.
 2. **Lệnh vào qua OB dự phòng thua nhiều.** Ở chế độ exact, 4/6 lệnh vào qua OB sau khi FVG thất bại, và cả 4 đều dính SL. FVG thủng thường là dấu hiệu mất đà. Nên thử bỏ OB dự phòng, hoặc yêu cầu CHoCH M5 trước khi vào ở OB. Mẫu còn nhỏ, chưa kết luận được.
 3. **FVG quá nhỏ.** Có FVG chỉ rộng 0,48 $ (05/10), nên ngưỡng 30% gần như vô nghĩa. Đề xuất độ rộng tối thiểu, ví dụ ≥ 0,3×ATR(14) M15.
 4. **SL quá sát.** SL = đỉnh/đáy nến mốc + 0,2×ATR M5 (khoảng 1 $). Có 2 lệnh dính SL ngay trong nến vào lệnh. Có thể thử đặt SL ngoài mép xa của vùng FVG/OB, hoặc tăng buffer.

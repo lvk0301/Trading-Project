@@ -170,252 +170,1022 @@
   {
    "choch": "2026-07-20 05:15",
    "dir": "SELL",
-   "result": "RR 1.44 < 1.5"
+   "result": "RR 1.44 < 1.5 (target 1h OB)",
+   "end": "2026-07-20 08:30",
+   "fvg": [
+    4000.03,
+    4008.3
+   ],
+   "ob": [
+    4009.15,
+    4016.61
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 125,
+   "pen_ob": 158,
+   "fvg_fail": "2026-07-20 07:45",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-07-20 19:15",
    "dir": "SELL",
-   "result": "FILLED"
+   "result": "FILLED",
+   "end": "2026-07-21 05:45",
+   "fvg": [
+    4014.91,
+    4024.94
+   ],
+   "ob": [
+    4024.94,
+    4032.55
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 45,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-07-21 07:45",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-07-21 18:15",
+   "fvg": [
+    4012.78,
+    4013.92
+   ],
+   "ob": [
+    3999.59,
+    4008.14
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-07-22 07:15",
    "dir": "BUY",
-   "result": "RR 0.11 < 1.5"
+   "result": "RR 0.11 < 1.5 (target 1h OB)",
+   "end": "2026-07-22 08:15",
+   "fvg": [
+    4082.98,
+    4092.22
+   ],
+   "ob": [
+    4078.12,
+    4084.41
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 34,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-07-29 19:30",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-07-30 01:00",
+   "fvg": [
+    4044.38,
+    4044.59
+   ],
+   "ob": [
+    4044.02,
+    4047.7
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 2933,
+   "pen_ob": 1142,
+   "fvg_fail": "2026-07-30 00:30",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-07-30 01:15",
    "dir": "BUY",
-   "result": "replaced by new CHoCH"
+   "result": "replaced by new CHoCH",
+   "end": "2026-07-30 10:00",
+   "fvg": [
+    4019.01,
+    4027.2
+   ],
+   "ob": [
+    3995.83,
+    4008.62
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-07-30 10:00",
    "dir": "SELL",
-   "result": "RR 0.42 < 1.5"
+   "result": "RR 0.42 < 1.5 (target 1h FVG)",
+   "end": "2026-07-30 20:00",
+   "fvg": [
+    4083.71,
+    4083.78
+   ],
+   "ob": [
+    4083.78,
+    4091.08
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 3829,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-05 08:45",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-06 20:15",
+   "fvg": [
+    4070.09,
+    4070.27
+   ],
+   "ob": [
+    4065.46,
+    4074.78
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-07 08:45",
    "dir": "BUY",
-   "result": "replaced by new CHoCH"
+   "result": "replaced by new CHoCH",
+   "end": "2026-08-10 07:00",
+   "fvg": [
+    4237.01,
+    4239.95
+   ],
+   "ob": [
+    4229.59,
+    4237.01
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-10 07:00",
    "dir": "SELL",
-   "result": "RR 0.49 < 1.5"
+   "result": "RR 0.49 < 1.5 (target 4h FVG)",
+   "end": "2026-08-10 07:45",
+   "fvg": [
+    4343.47,
+    4343.56
+   ],
+   "ob": [
+    4343.56,
+    4348.97
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 4011,
+   "pen_ob": 39,
+   "fvg_fail": "2026-08-10 07:00",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-14 07:30",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-14 13:00",
+   "fvg": [
+    4352.21,
+    4356.31
+   ],
+   "ob": [
+    4356.31,
+    4364.17
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-14 13:00",
    "dir": "BUY",
-   "result": "FILLED"
+   "result": "FILLED",
+   "end": "2026-08-14 14:00",
+   "fvg": [
+    4324.84,
+    4329.45
+   ],
+   "ob": [
+    4310.72,
+    4324.84
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 34,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-17 06:00",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-17 06:30",
+   "fvg": [
+    4375.85,
+    4377.71
+   ],
+   "ob": [
+    4371.21,
+    4376.07
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 266,
+   "pen_ob": 186,
+   "fvg_fail": "2026-08-17 06:15",
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-17 06:45",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-17 07:15",
+   "fvg": [
+    4375.2,
+    4379.42
+   ],
+   "ob": [
+    4377.71,
+    4386.85
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 370,
+   "pen_ob": 0,
+   "fvg_fail": "2026-08-17 07:15",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-17 07:30",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-17 12:15",
+   "fvg": [
+    4373.8,
+    4378.42
+   ],
+   "ob": [
+    4367.02,
+    4375.2
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-17 19:30",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-17 20:45",
+   "fvg": [
+    4397.62,
+    4398.98
+   ],
+   "ob": [
+    4395.24,
+    4405.89
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 1362,
+   "pen_ob": 0,
+   "fvg_fail": "2026-08-17 20:45",
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-17 21:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-18 01:00",
+   "fvg": [
+    4391.99,
+    4403.67
+   ],
+   "ob": [
+    4377.17,
+    4386.31
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-18 21:45",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-19 08:15",
+   "fvg": [
+    4388.86,
+    4392.13
+   ],
+   "ob": [
+    4392.13,
+    4405.12
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-20 01:30",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-20 02:00",
+   "fvg": [
+    4492.78,
+    4493.17
+   ],
+   "ob": [
+    4490.58,
+    4499.34
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 1115,
+   "pen_ob": 173,
+   "fvg_fail": "2026-08-20 01:45",
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-21 09:45",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-21 19:45",
+   "fvg": [
+    4521.11,
+    4523.51
+   ],
+   "ob": [
+    4508.71,
+    4521.11
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-24 07:15",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-24 07:15",
+   "fvg": [
+    4619.32,
+    4620.11
+   ],
+   "ob": [
+    4604.74,
+    4609.54
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 3301,
+   "pen_ob": 0,
+   "fvg_fail": "2026-08-24 07:15",
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-25 20:15",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-08-25 22:30",
+   "fvg": [
+    4628.12,
+    4637.14
+   ],
+   "ob": [
+    4640.44,
+    4647.25
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 184,
+   "pen_ob": 279,
+   "fvg_fail": "2026-08-25 22:15",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-25 22:45",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-26 06:45",
+   "fvg": [
+    4617.53,
+    4618.38
+   ],
+   "ob": [
+    4605.1,
+    4617.53
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-27 05:30",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-27 11:30",
+   "fvg": [
+    4594.75,
+    4601.9
+   ],
+   "ob": [
+    4583.96,
+    4591.89
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 23,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-28 14:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-08-28 18:00",
+   "fvg": [
+    4577.29,
+    4580.55
+   ],
+   "ob": [
+    4571.28,
+    4584.09
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-08-31 12:30",
    "dir": "BUY",
-   "result": "RR 1.36 < 1.5"
+   "result": "RR 1.36 < 1.5 (target 4h FVG)",
+   "end": "2026-08-31 14:30",
+   "fvg": [
+    4426.99,
+    4430.49
+   ],
+   "ob": [
+    4412.81,
+    4421.77
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 38,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-08-31 21:00",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-01 02:30",
+   "fvg": [
+    4441.62,
+    4447.02
+   ],
+   "ob": [
+    4452.56,
+    4463.81
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 14,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-02 12:45",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-04 08:30",
+   "fvg": [
+    4293.82,
+    4302.11
+   ],
+   "ob": [
+    4282.48,
+    4293.82
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 6,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-04 14:45",
    "dir": "BUY",
-   "result": "RR 1.26 < 1.5"
+   "result": "RR 1.26 < 1.5 (target 1h FVG)",
+   "end": "2026-09-04 17:15",
+   "fvg": [
+    4464.39,
+    4466.48
+   ],
+   "ob": [
+    4460.01,
+    4464.39
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 128,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-09-04 19:45",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-07 15:30",
+   "fvg": [
+    4470.77,
+    4472.62
+   ],
+   "ob": [
+    4472.62,
+    4476.49
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-08 05:15",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-08 12:30",
+   "fvg": [
+    4404.45,
+    4406.13
+   ],
+   "ob": [
+    4403.7,
+    4404.38
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 1,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-09 08:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-09 22:15",
+   "fvg": [
+    4350.12,
+    4352.74
+   ],
+   "ob": [
+    4341.04,
+    4350.12
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-09 22:15",
    "dir": "SELL",
-   "result": "FILLED"
+   "result": "FILLED",
+   "end": "2026-09-10 00:45",
+   "fvg": [
+    4395.38,
+    4414.84
+   ],
+   "ob": [
+    4414.29,
+    4428.59
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 129,
+   "pen_ob": 43,
+   "fvg_fail": "2026-09-10 00:00",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-09-10 15:45",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-11 12:45",
+   "fvg": [
+    4415.01,
+    4423.25
+   ],
+   "ob": [
+    4423.54,
+    4431.18
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-11 20:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-12 01:15",
+   "fvg": [
+    4342.97,
+    4352.45
+   ],
+   "ob": [
+    4324.35,
+    4334.82
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 76,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-09-14 09:00",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-09-14 11:30",
+   "fvg": [
+    4338.0,
+    4342.41
+   ],
+   "ob": [
+    4326.23,
+    4338.0
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 276,
+   "pen_ob": 125,
+   "fvg_fail": "2026-09-14 09:45",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-09-17 01:15",
    "dir": "SELL",
-   "result": "replaced by new CHoCH"
+   "result": "replaced by new CHoCH",
+   "end": "2026-09-17 07:15",
+   "fvg": [
+    4324.16,
+    4342.43
+   ],
+   "ob": [
+    4349.87,
+    4361.79
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-17 07:15",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-18 01:45",
+   "fvg": [
+    4267.09,
+    4268.59
+   ],
+   "ob": [
+    4258.78,
+    4267.09
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-21 18:45",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-09-21 21:30",
+   "fvg": [
+    4348.38,
+    4352.18
+   ],
+   "ob": [
+    4339.44,
+    4347.7
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 167,
+   "pen_ob": 304,
+   "fvg_fail": "2026-09-21 20:45",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-09-24 09:00",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-09-25 08:00",
+   "fvg": [
+    4290.35,
+    4295.14
+   ],
+   "ob": [
+    4295.14,
+    4303.23
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 136,
+   "pen_ob": 15,
+   "fvg_fail": "2026-09-24 09:30",
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-09-25 08:00",
    "dir": "BUY",
-   "result": "FILLED"
+   "result": "FILLED",
+   "end": "2026-09-25 11:45",
+   "fvg": [
+    4272.5,
+    4276.84
+   ],
+   "ob": [
+    4264.22,
+    4270.25
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 173,
+   "pen_ob": 45,
+   "fvg_fail": "2026-09-25 10:45",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-10-02 07:15",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-10-02 11:00",
+   "fvg": [
+    4171.54,
+    4177.9
+   ],
+   "ob": [
+    4177.9,
+    4183.66
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 265,
+   "pen_ob": 0,
+   "fvg_fail": "2026-10-02 11:00",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-10-02 17:15",
    "dir": "SELL",
-   "result": "FILLED"
+   "result": "FILLED",
+   "end": "2026-10-02 18:30",
+   "fvg": [
+    4174.29,
+    4179.32
+   ],
+   "ob": [
+    4184.26,
+    4195.74
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 166,
+   "pen_ob": 36,
+   "fvg_fail": "2026-10-02 17:30",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-10-02 21:30",
    "dir": "SELL",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-10-03 02:00",
+   "fvg": [
+    4196.37,
+    4203.78
+   ],
+   "ob": [
+    4203.78,
+    4220.37
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-10-05 11:30",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-10-05 15:00",
+   "fvg": [
+    4155.38,
+    4155.86
+   ],
+   "ob": [
+    4158.69,
+    4163.15
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 808,
+   "pen_ob": 234,
+   "fvg_fail": "2026-10-05 14:30",
+   "anchors": 2,
+   "events": []
   },
   {
    "choch": "2026-10-06 08:00",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-10-06 08:45",
+   "fvg": [
+    4144.97,
+    4146.08
+   ],
+   "ob": [
+    4133.1,
+    4137.53
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 964,
+   "pen_ob": 195,
+   "fvg_fail": "2026-10-06 08:15",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-10-08 08:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-10-08 12:45",
+   "fvg": [
+    4110.97,
+    4115.95
+   ],
+   "ob": [
+    4103.23,
+    4108.71
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
   },
   {
    "choch": "2026-10-08 21:30",
    "dir": "BUY",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-10-08 22:45",
+   "fvg": [
+    4119.55,
+    4120.38
+   ],
+   "ob": [
+    4113.33,
+    4119.55
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 605,
+   "pen_ob": 143,
+   "fvg_fail": "2026-10-08 22:00",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-10-13 07:15",
    "dir": "SELL",
-   "result": "OB broken"
+   "result": "OB broken",
+   "end": "2026-10-13 09:45",
+   "fvg": [
+    4171.41,
+    4172.67
+   ],
+   "ob": [
+    4172.67,
+    4175.76
+   ],
+   "zone_at_end": "OB",
+   "pen_fvg": 756,
+   "pen_ob": 0,
+   "fvg_fail": "2026-10-13 09:45",
+   "anchors": 1,
+   "events": []
   },
   {
    "choch": "2026-10-13 10:00",
    "dir": "BUY",
-   "result": "opposite M15 CHoCH"
+   "result": "opposite M15 CHoCH",
+   "end": "2026-10-13 16:30",
+   "fvg": [
+    4159.07,
+    4163.61
+   ],
+   "ob": [
+    4152.17,
+    4159.07
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 0,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 0,
+   "events": []
+  },
+  {
+   "choch": "2026-10-14 13:00",
+   "dir": "SELL",
+   "result": "still waiting at end of data",
+   "end": "2026-10-14 14:30",
+   "fvg": [
+    4162.57,
+    4164.81
+   ],
+   "ob": [
+    4164.81,
+    4166.96
+   ],
+   "zone_at_end": "FVG",
+   "pen_fvg": 30,
+   "pen_ob": 0,
+   "fvg_fail": null,
+   "anchors": 1,
+   "events": []
   }
  ],
  "funnel": {
