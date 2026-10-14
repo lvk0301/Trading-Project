@@ -1,0 +1,437 @@
+{
+ "trades": [
+  {
+   "dir": "SELL",
+   "choch": "2026-07-20 19:15",
+   "entry_time": "2026-07-21 05:45",
+   "exit_time": "2026-07-21 07:30",
+   "entry": 4003.85,
+   "sl": 4020.53,
+   "exit": 4020.53,
+   "risk": 16.68,
+   "R": -1.02,
+   "reason": "SL",
+   "zone": "FVG",
+   "rr_pot": 1.76,
+   "zone_LU": [
+    4014.91,
+    4024.94
+   ],
+   "fvg": [
+    4014.91,
+    4024.94
+   ],
+   "ob": [
+    4024.94,
+    4032.55
+   ],
+   "anchor": "2026-07-20 22:00",
+   "nearest_target": "1h OB",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": -1
+  },
+  {
+   "dir": "BUY",
+   "choch": "2026-08-14 13:00",
+   "entry_time": "2026-08-14 14:00",
+   "exit_time": "2026-08-18 01:00",
+   "entry": 4335.61,
+   "sl": 4326.42,
+   "exit": 4413.67,
+   "risk": 9.19,
+   "R": 8.45,
+   "reason": "target+CHoCH",
+   "zone": "FVG",
+   "rr_pot": 8.87,
+   "zone_LU": [
+    4324.84,
+    4329.45
+   ],
+   "fvg": [
+    4324.84,
+    4329.45
+   ],
+   "ob": [
+    4310.72,
+    4324.84
+   ],
+   "anchor": "2026-08-14 13:30",
+   "nearest_target": "1h FVG",
+   "touched": "1h FVG",
+   "be": true,
+   "with_d1": false,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-09-09 22:15",
+   "entry_time": "2026-09-10 00:45",
+   "exit_time": "2026-09-10 08:00",
+   "entry": 4413.63,
+   "sl": 4422.68,
+   "exit": 4413.23,
+   "risk": 9.05,
+   "R": -0.0,
+   "reason": "BE",
+   "zone": "OB",
+   "rr_pot": 4.13,
+   "zone_LU": [
+    4414.29,
+    4428.59
+   ],
+   "fvg": [
+    4395.38,
+    4414.84
+   ],
+   "ob": [
+    4414.29,
+    4428.59
+   ],
+   "anchor": "2026-09-10 00:15",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": true,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "BUY",
+   "choch": "2026-09-25 08:00",
+   "entry_time": "2026-09-25 11:45",
+   "exit_time": "2026-09-25 11:45",
+   "entry": 4271.96,
+   "sl": 4266.33,
+   "exit": 4266.33,
+   "risk": 5.63,
+   "R": -1.07,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 4.35,
+   "zone_LU": [
+    4264.22,
+    4270.25
+   ],
+   "fvg": [
+    4272.5,
+    4276.84
+   ],
+   "ob": [
+    4264.22,
+    4270.25
+   ],
+   "anchor": "2026-09-25 11:00",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": false,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-10-02 17:15",
+   "entry_time": "2026-10-02 18:30",
+   "exit_time": "2026-10-02 19:30",
+   "entry": 4180.56,
+   "sl": 4189.92,
+   "exit": 4189.92,
+   "risk": 9.36,
+   "R": -1.04,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 2.77,
+   "zone_LU": [
+    4184.26,
+    4195.74
+   ],
+   "fvg": [
+    4174.29,
+    4179.32
+   ],
+   "ob": [
+    4184.26,
+    4195.74
+   ],
+   "anchor": "2026-10-02 18:00",
+   "nearest_target": "4h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  }
+ ],
+ "log": [
+  {
+   "choch": "2026-07-20 05:15",
+   "dir": "SELL",
+   "result": "RR 1.44 < 1.5"
+  },
+  {
+   "choch": "2026-07-20 19:15",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-07-21 07:45",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-07-22 07:15",
+   "dir": "BUY",
+   "result": "RR 0.11 < 1.5"
+  },
+  {
+   "choch": "2026-07-29 19:30",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-07-30 01:15",
+   "dir": "BUY",
+   "result": "replaced by new CHoCH"
+  },
+  {
+   "choch": "2026-07-30 10:00",
+   "dir": "SELL",
+   "result": "RR 0.42 < 1.5"
+  },
+  {
+   "choch": "2026-08-05 08:45",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-07 08:45",
+   "dir": "BUY",
+   "result": "replaced by new CHoCH"
+  },
+  {
+   "choch": "2026-08-10 07:00",
+   "dir": "SELL",
+   "result": "RR 0.49 < 1.5"
+  },
+  {
+   "choch": "2026-08-14 07:30",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-14 13:00",
+   "dir": "BUY",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-08-17 06:00",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-17 06:45",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-17 07:30",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-17 19:30",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-17 21:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-18 21:45",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-20 01:30",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-21 09:45",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-24 07:15",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-25 20:15",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-08-25 22:45",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-27 05:30",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-28 14:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-08-31 12:30",
+   "dir": "BUY",
+   "result": "RR 1.36 < 1.5"
+  },
+  {
+   "choch": "2026-08-31 21:00",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-02 12:45",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-04 14:45",
+   "dir": "BUY",
+   "result": "RR 1.26 < 1.5"
+  },
+  {
+   "choch": "2026-09-04 19:45",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-08 05:15",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-09 08:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-09 22:15",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-09-10 15:45",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-11 20:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-14 09:00",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-09-17 01:15",
+   "dir": "SELL",
+   "result": "replaced by new CHoCH"
+  },
+  {
+   "choch": "2026-09-17 07:15",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-21 18:45",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-09-24 09:00",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-25 08:00",
+   "dir": "BUY",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-02 07:15",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-02 17:15",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-02 21:30",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-10-05 11:30",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-06 08:00",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-08 08:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-10-08 21:30",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-13 07:15",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-13 10:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  }
+ ],
+ "funnel": {
+  "choch": 173,
+  "no_disp": 116,
+  "no_fvg": 6,
+  "setups": 51
+ },
+ "summary": {
+  "n": 5,
+  "win_rate": 20.0,
+  "total_R": 5.32,
+  "avg_R": 1.064,
+  "avg_win": 8.45,
+  "avg_loss": -1.04,
+  "profit_factor": 2.7,
+  "max_dd_R": 2.11
+ }
+}

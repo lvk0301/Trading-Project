@@ -1,0 +1,300 @@
+{
+ "trades": [
+  {
+   "dir": "BUY",
+   "choch": "2026-09-14 09:00",
+   "entry_time": "2026-09-14 10:10",
+   "exit_time": "2026-09-14 11:35",
+   "entry": 4335.76,
+   "sl": 4326.17,
+   "exit": 4326.17,
+   "risk": 9.59,
+   "R": -1.04,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 4.1,
+   "zone_LU": [
+    4326.23,
+    4338.0
+   ],
+   "fvg": [
+    4338.0,
+    4342.41
+   ],
+   "ob": [
+    4326.23,
+    4338.0
+   ],
+   "anchor": "2026-09-14 10:00",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": false,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "BUY",
+   "choch": "2026-09-25 08:00",
+   "entry_time": "2026-09-25 11:30",
+   "exit_time": "2026-09-25 11:55",
+   "entry": 4271.17,
+   "sl": 4266.94,
+   "exit": 4266.94,
+   "risk": 4.23,
+   "R": -1.09,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 5.85,
+   "zone_LU": [
+    4264.22,
+    4270.25
+   ],
+   "fvg": [
+    4272.5,
+    4276.84
+   ],
+   "ob": [
+    4264.22,
+    4270.25
+   ],
+   "anchor": "2026-09-25 11:10",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": false,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-10-02 17:15",
+   "entry_time": "2026-10-02 18:30",
+   "exit_time": "2026-10-02 19:30",
+   "entry": 4180.56,
+   "sl": 4189.2,
+   "exit": 4189.2,
+   "risk": 8.64,
+   "R": -1.05,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 2.99,
+   "zone_LU": [
+    4184.26,
+    4195.74
+   ],
+   "fvg": [
+    4174.29,
+    4179.32
+   ],
+   "ob": [
+    4184.26,
+    4195.74
+   ],
+   "anchor": "2026-10-02 18:05",
+   "nearest_target": "4h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-10-05 11:30",
+   "entry_time": "2026-10-05 13:35",
+   "exit_time": "2026-10-05 14:05",
+   "entry": 4149.99,
+   "sl": 4156.81,
+   "exit": 4156.81,
+   "risk": 6.82,
+   "R": -1.06,
+   "reason": "SL",
+   "zone": "FVG",
+   "rr_pot": 3.16,
+   "zone_LU": [
+    4155.38,
+    4155.86
+   ],
+   "fvg": [
+    4155.38,
+    4155.86
+   ],
+   "ob": [
+    4158.69,
+    4163.15
+   ],
+   "anchor": "2026-10-05 13:25",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-10-13 07:15",
+   "entry_time": "2026-10-13 09:35",
+   "exit_time": "2026-10-13 09:35",
+   "entry": 4167.86,
+   "sl": 4174.79,
+   "exit": 4174.79,
+   "risk": 6.93,
+   "R": -1.06,
+   "reason": "SL",
+   "zone": "OB",
+   "rr_pot": 9.8,
+   "zone_LU": [
+    4172.67,
+    4175.76
+   ],
+   "fvg": [
+    4171.41,
+    4172.67
+   ],
+   "ob": [
+    4172.67,
+    4175.76
+   ],
+   "anchor": "2026-10-13 09:25",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  },
+  {
+   "dir": "SELL",
+   "choch": "2026-10-14 13:00",
+   "entry_time": "2026-10-14 13:30",
+   "exit_time": "2026-10-14 14:40",
+   "entry": 4152.83,
+   "sl": 4164.13,
+   "exit": 4148.09,
+   "risk": 11.3,
+   "R": 0.38,
+   "reason": "open at end",
+   "zone": "FVG",
+   "rr_pot": 4.86,
+   "zone_LU": [
+    4162.57,
+    4164.81
+   ],
+   "fvg": [
+    4162.57,
+    4164.81
+   ],
+   "ob": [
+    4164.81,
+    4166.96
+   ],
+   "anchor": "2026-10-14 13:10",
+   "nearest_target": "1h FVG",
+   "touched": "",
+   "be": false,
+   "with_d1": true,
+   "d1": -1,
+   "h4": 1
+  }
+ ],
+ "log": [
+  {
+   "choch": "2026-09-14 09:00",
+   "dir": "BUY",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-09-17 01:15",
+   "dir": "SELL",
+   "result": "replaced by new CHoCH"
+  },
+  {
+   "choch": "2026-09-17 07:15",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-21 18:45",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-09-24 09:00",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-09-25 08:00",
+   "dir": "BUY",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-02 07:15",
+   "dir": "SELL",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-02 17:15",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-02 21:30",
+   "dir": "SELL",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-10-05 11:30",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-06 08:00",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-08 08:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-10-08 21:30",
+   "dir": "BUY",
+   "result": "OB broken"
+  },
+  {
+   "choch": "2026-10-13 07:15",
+   "dir": "SELL",
+   "result": "FILLED"
+  },
+  {
+   "choch": "2026-10-13 10:00",
+   "dir": "BUY",
+   "result": "opposite M15 CHoCH"
+  },
+  {
+   "choch": "2026-10-14 13:00",
+   "dir": "SELL",
+   "result": "FILLED"
+  }
+ ],
+ "funnel": {
+  "choch": 62,
+  "no_disp": 42,
+  "no_fvg": 4,
+  "setups": 16
+ },
+ "summary": {
+  "n": 6,
+  "win_rate": 16.7,
+  "total_R": -4.92,
+  "avg_R": -0.82,
+  "avg_win": 0.38,
+  "avg_loss": -1.06,
+  "profit_factor": 0.07,
+  "max_dd_R": 5.3
+ }
+}

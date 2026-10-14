@@ -7,3 +7,6 @@ When the user asks about "checklist", "check list", the analysis steps, or wheth
 
 ## TradingView
 `.mcp.json` configures the TradingView MCP server (`mcp-tradingview`). The user may also have it as a claude.ai custom connector. It provides watchlists, OHLCV, technicals, alerts and the economic calendar, but not chart drawings; ask for a screenshot to see the user's drawn levels.
+
+## Backtest
+`backtest/smc_v01.py` backtests the user's rule set `docs/SMC_XAUUSD_rules_v0.1.md` on `data/*.json` (TradingView MCP OHLCV dumps; refresh by re-pulling with `get_ohlcv`, large results are saved to a file you can copy into `data/`). Run `python3 backtest/smc_v01.py --mode exact|proxy --out backtest/results/<name>.json`. TradingView only serves ~1 month of M5, so `exact` covers 1 month and `proxy` (M15 in place of M5) covers 3 months. Latest results and the interpretation choices are in `docs/backtest_v0.1_report.md`.
